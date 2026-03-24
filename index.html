@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --bg: #0a0a0f;
+      --bg: #1A1C19;
       --surface: #111118;
       --card: #16161f;
       --accent: #00f5a0;
@@ -411,6 +411,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
+   <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -610,6 +611,83 @@
   </div>
 </section>
 
+  <div id="gallery">
+  <div class="inner">
+    <p class="section-label reveal visible">// moments &amp; memories</p>
+    <h2 class="section-title reveal visible">My Journey in Pictures</h2>
+
+    <div class="slideshow-wrapper reveal visible">
+      <!-- Counter -->
+      <div class="slide-counter" id="slideCounter">4 / 4</div>
+
+      <!-- Prev / Next -->
+      <button class="slide-btn prev" id="prevBtn" aria-label="Previous slide">←</button>
+      <button class="slide-btn next" id="nextBtn" aria-label="Next slide">→</button>
+
+      <!-- Slides -->
+      <div class="slides-track" id="slidesTrack" style="transform: translateX(-300%);">
+
+        <!-- SLIDE 1 — Replace src with your actual image path e.g. src="images/photo1.jpg" -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;q=80" alt="Coding Session" onerror="this.parentElement.innerHTML='&lt;div class=\'slide-placeholder s1\'&gt;&lt;div class=\'ph-icon\'&gt;💻&lt;/div&gt;&lt;div class=\'ph-text\'&gt;Add your photo here&lt;br/&gt;&lt;small&gt;src=&quot;images/photo1.jpg&quot;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;'">
+          <div class="slide-caption">
+            <span class="slide-tag">// college life</span>
+            <h3>Hackathon Night 🚀</h3>
+            <p>Building the future, one commit at a time — IET Lucknow</p>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&amp;q=80" alt="Team Work" onerror="this.parentElement.innerHTML='&lt;div class=\'slide-placeholder s2\'&gt;&lt;div class=\'ph-icon\'&gt;🤝&lt;/div&gt;&lt;div class=\'ph-text\'&gt;Add your photo here&lt;br/&gt;&lt;small&gt;src=&quot;images/photo2.jpg&quot;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;'">
+          <div class="slide-caption">
+            <span class="slide-tag">// teamwork</span>
+            <h3>Project Collaboration 🤝</h3>
+            <p>Working with brilliant minds on AI research projects</p>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&amp;q=80" alt="Tech Event" onerror="this.parentElement.innerHTML='&lt;div class=\'slide-placeholder s3\'&gt;&lt;div class=\'ph-icon\'&gt;🎓&lt;/div&gt;&lt;div class=\'ph-text\'&gt;Add your photo here&lt;br/&gt;&lt;small&gt;src=&quot;images/photo3.jpg&quot;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;'">
+          <div class="slide-caption">
+            <span class="slide-tag">// events</span>
+            <h3>Tech Fest 2024 🎯</h3>
+            <p>Representing IET Lucknow at national-level competitions</p>
+          </div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;q=80" alt="AI Lab" onerror="this.parentElement.innerHTML='&lt;div class=\'slide-placeholder s4\'&gt;&lt;div class=\'ph-icon\'&gt;🤖&lt;/div&gt;&lt;div class=\'ph-text\'&gt;Add your photo here&lt;br/&gt;&lt;small&gt;src=&quot;images/photo4.jpg&quot;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;'">
+          <div class="slide-caption">
+            <span class="slide-tag">// lab work</span>
+            <h3>AI Lab Sessions 🧠</h3>
+            <p>Experimenting with neural networks and deep learning models</p>
+          </div>
+        </div>
+
+      </div><!-- end slides-track -->
+
+      <!-- Dots -->
+      <div class="slide-dots" id="slideDots">
+        <button class="dot" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+        <button class="dot active" data-index="3"></button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="slide-progress">
+        <div class="slide-progress-bar" id="progressBar" style="transition: width 4000ms linear; width: 100%;"></div>
+      </div>
+    </div><!-- end slideshow-wrapper -->
+
+  </div>
+</div>
+
+
+  
 <section id="contact" style="max-width:100%;padding:6rem 2rem;">
   <div style="max-width:1100px;margin:0 auto;">
     <p class="section-label reveal" style="text-align:center;">// reach out</p>
@@ -617,8 +695,8 @@
     <div class="contact-box reveal">
       <p>I'm always open to internship opportunities, project collaborations, research discussions, or just a good conversation about AI and tech. Drop me a message!</p>
       <div class="contact-links">
-        <a href="2400520310068@ietlucknow.ac.in" class="btn btn-primary">📧 Email Me</a>
-        <a href="www.linkedin.com/in/utkarsh-singh-40b803282" class="btn btn-outline" target="_blank">💼 LinkedIn</a>
+       <a href="mailto:2400520310068@ietlucknow.ac.in" class="btn btn-outline" target="_blank">📧 Email</a></a>
+       <a href="https://www.linkedin.com/in/utkarsh-singh-40b803282" class="btn btn-outline" target="_blank">💼 LinkedIn</a>
         <a href="https://github.com/UPsingh1729" class="btn btn-outline" target="_blank">🐙 GitHub</a>
         <a href="resume.pdf" class="btn btn-outline" target="_blank">📄 Resume</a>
       </div>
